@@ -7,14 +7,14 @@ import { Injectable } from '@angular/core';
 export class AuthService {
 
   constructor(private http: HttpClient) { }
-  apiUrl = 'http://localhost:3000/user';
+  apiUrl = 'https://json-test-04dc36bd7ea2.herokuapp.com/user';
 
   getAll(){
     return this.http.get(this.apiUrl);
   }
 
   getAllRole(){
-    return this.http.get('http://localhost:3000/role')
+    return this.http.get('https://json-test-04dc36bd7ea2.herokuapp.com/role')
   }
 
   getByCode(code: any){
